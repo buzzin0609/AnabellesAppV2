@@ -15,7 +15,7 @@ class AmountBtn extends React.Component {
 		return (
 			<Button
 				containerStyle={styles.btnCircle}
-				style={styles.btn}
+				style={styles.btnCircleInner}
 				onPress={() => this.props.handleTextChange(this.props.amount)}>
 				{this.props.amount}
 			</Button>

@@ -30,17 +30,22 @@ export default StyleSheet.create({
 		alignItems: 'center',
 		borderRadius: 100,
 		backgroundColor: vars.colors.blue,
-		height: 65,
+		height: 45,
 		justifyContent: 'center',
 		overflow: 'hidden',
 		padding: 5,
-		width: 65
+		width: 45
+	},
+	btnCircleInner: {
+		color: '#fff',
+		fontSize: 14
 	},
 	rowBtnGroup: {
 		backgroundColor: '#fff',
 		flex: 1,
 		flexDirection: 'row',
 		justifyContent: 'space-around',
+		paddingHorizontal: 30,
 		paddingTop: 10
 	},
 	box: {

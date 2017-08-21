@@ -10,7 +10,14 @@ export default class FooterNavView extends React.Component {
 	render() {
 		return (
 			<View style={styles.footerNav}>
-				<Link title="Feeds" href="Feeds" {...this.props} style={styles.link} />
+				<View style={styles.linkWrapper}>
+					<Link title="Add New Feed"
+						  href="AddFeed"
+						  large
+						  buttonStyle={styles.linkStyle}
+						  {...this.props}
+						  {...styles.link} />
+				</View>
 			</View>
 		);
 	}
@@ -20,17 +27,22 @@ const styles = {
 	footerNav: {
 		backgroundColor: 'gray',
 		bottom: 0,
-		flex: 0.2,
+		flex: 1,
 		flexDirection: 'row',
-		height: 60,
 		justifyContent: 'space-around',
 		left: 0,
-		padding: 10,
 		position: 'absolute',
 		right: 0,
 		width: '100%'
 	},
+	linkWrapper: {
+		flex: 1,
+	},
+	linkStyle: {
+		flexDirection: 'row',
+		marginTop: 5
+	},
 	link: {
-
+		backgroundColor: 'gray'
 	}
 }

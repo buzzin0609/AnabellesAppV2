@@ -29,14 +29,15 @@ const App = StackNavigator({
             headerMode: 'float',
 			headerRight: (<Button
                 backgroundColor="transparent"
-                onPress={() => navigation.navigate('AddFeed')}
-                iconRight
-                icon={{name: 'add'}}
-                title="Add feed"
+                onPress={() => navigation.navigate('Feeds')}
+                title="Feeds"
                 buttonStyle={{marginRight: -10, marginTop: 3}}
             />),
 			headerLeft: null,
 			headerTintColor: '#fff',
+			onNavigationStateChange: (prevState, currentState) => {
+				console.log('state changed', prevState, currentState);
+			}
 		}
     }
 });

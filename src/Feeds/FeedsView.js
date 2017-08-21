@@ -11,6 +11,7 @@ import dateUtils from '../dateUtils/dateUtils';
 import Title from '../shared/Title';
 import FeedPagination from './FeedPagination';
 import FeedModal from './FeedModal';
+import FeedStats from './FeedStats';
 import events from '../shared/events';
 
 const feedService = getFeedService();
@@ -51,6 +52,7 @@ export default class FeedsView extends React.Component {
 			<Layout {...this.props}>
 				<PageHeader title="Feeds" />
 				<Title>{dayText}</Title>
+				<FeedStats feeds={this.state.feeds} />
 				{
 					this.renderFeeds()
 				}

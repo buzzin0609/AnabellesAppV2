@@ -3,13 +3,18 @@
  */
 
 import React from 'react';
-import {Button} from 'react-native';
+import {Button} from 'react-native-elements';
 import styleVariables from './styleVariables';
 
 export default class Link extends React.Component {
 	render() {
 		return (
-			<Button title={this.props.title} color="#fff" style={this.props.style || {}} onPress={this.goTo.bind(this)} />
+			<Button
+				title={this.props.title}
+				color="#fff"
+				onPress={this.goTo.bind(this)}
+				{...this.props}
+			/>
 		)
 	}
 

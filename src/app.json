@@ -1,5 +1,12 @@
 {
   "expo": {
-    "sdkVersion": "19.0.0"
+    "name": "Anabelle's App",
+    "icon": "./icons/icon.png",
+    "version": "0.2.0",
+    "slug": "anabelles-app",
+    "sdkVersion": "19.0.0",
+    "ios": {
+      "bundleIdentifier": "com.willbusby.anabellesApp"
+    }
   }
 }
