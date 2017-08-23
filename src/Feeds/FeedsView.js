@@ -70,7 +70,7 @@ export default class FeedsView extends React.Component {
 			return <Title>Loading Feeds</Title>
 		} else {
 			return (this.state.feeds.length > 0 &&
-			this.state.feeds.map(feed => <Feed key={feed.timestamp} {...feed} />) ||
+			this.state.feeds.map((feed, i) => <Feed key={feed.timestamp + i} {...feed} />) ||
 			<Title>No Feeds</Title>);
 		}
 	}

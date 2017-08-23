@@ -30,7 +30,7 @@ export default {
     getJSON: function(url) {
         return this.request(url, 'GET')
             .then(data => {
-                return Promise.resolve(JSON.parse(data));
+				return Promise.resolve(JSON.parse(data));
             });
     },
     post: function (url, data) {
