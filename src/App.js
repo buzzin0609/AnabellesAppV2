@@ -34,10 +34,7 @@ const App = StackNavigator({
                 buttonStyle={{marginRight: -10, marginTop: 3}}
             />),
 			headerLeft: null,
-			headerTintColor: '#fff',
-			onNavigationStateChange: (prevState, currentState) => {
-				console.log('state changed', prevState, currentState);
-			}
+			headerTintColor: '#fff'
 		}
     }
 });

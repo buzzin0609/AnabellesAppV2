@@ -46,7 +46,6 @@ export default class FeedPagination extends React.Component {
 	}
 
 	paginate(day) {
-		console.log(this.props.parent.state);
 		this.props.parent.changeDay(day);
 	}
 

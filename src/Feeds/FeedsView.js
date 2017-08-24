@@ -33,7 +33,6 @@ export default class FeedsView extends React.Component {
 	}
 
 	componentWillMount() {
-		console.log('adding event');
 		if (this.event && this.event.remove) {
 			this.event.remove();
 		}
