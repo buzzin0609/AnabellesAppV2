@@ -5,6 +5,7 @@
     "version": "0.3.0",
     "slug": "anabelles-app",
     "sdkVersion": "20.0.0",
+    "isRemoteJSEnabled": false,
     "loading": {
       "splash": {
         "backgroundImage": "./icons/splash.png"
