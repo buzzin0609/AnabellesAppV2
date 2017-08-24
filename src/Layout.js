@@ -53,7 +53,7 @@ export default class Layout extends React.Component {
 				<View style={styles.content}>
 					<KeyboardAwareScrollView style={styles.contentInner}>
 						{this.props.children}
-						<View style={{paddingBottom: 20}}/>
+						<View style={{paddingBottom: 40}}/>
 					</KeyboardAwareScrollView>
 				</View>
 				
@@ -68,10 +68,10 @@ const styles = {
 		flex: 1
 	},
 	content: {
-		flex: 0.8,
-		paddingBottom: 60
+		flex: 0.9
 	},
 	contentInner: {
 		flex: 1,
 	}
 };
+

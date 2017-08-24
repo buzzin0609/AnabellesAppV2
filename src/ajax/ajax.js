@@ -37,3 +37,12 @@ export default {
         return this.request(url, 'POST', data);
     }
 }
+
+// async function populateLocal() {
+// 	const feeds = await ajax.getJSON('rest/feeds');
+// 	for (let i = 0, l = feeds.length; i < l; i++) {
+// 		await ajax3.request('rest/feeds/' + feeds[i].timestamp, 'PUT', JSON.stringify(feeds[i]));
+// 	}
+// }
+//
+// populateLocal()

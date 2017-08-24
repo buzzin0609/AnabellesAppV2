@@ -4,8 +4,8 @@
 
 const model = {
 	feedTime: '',
-	feedAmountAdded: '',
-	feedAmountDrunk: '',
+	feedAmountAdded: 0,
+	feedAmountDrunk: 0,
 	feedMedicine: false,
 	feedSolids: false,
 	feedSolidsType: '',

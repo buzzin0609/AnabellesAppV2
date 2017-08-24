@@ -3,6 +3,7 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import {TextInput, Text, View, StyleSheet} from 'react-native';
 import BoxHeader from '../box/BoxHeader';
 import BoxContent from '../box/BoxContent';
@@ -29,7 +30,7 @@ export default class FeedAmount extends React.Component {
 		super(props);
 		
 		this.state = {
-			amount: this.props.amount || 0
+			amount: this.props.amount
 		};
 	}
 
@@ -64,7 +65,6 @@ export default class FeedAmount extends React.Component {
 
 	handleTextChange(newText) {
 
-
 		if (this.props.parent) {
 			const newState = {};
 
@@ -82,3 +82,7 @@ export default class FeedAmount extends React.Component {
 		});
 	}
 }
+
+FeedAmount.defaultProps = {
+	amount: 0
+};

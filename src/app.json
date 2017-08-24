@@ -2,9 +2,14 @@
   "expo": {
     "name": "Anabelle's App",
     "icon": "./icons/icon.png",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "slug": "anabelles-app",
-    "sdkVersion": "19.0.0",
+    "sdkVersion": "20.0.0",
+    "loading": {
+      "splash": {
+        "backgroundImage": "./icons/splash.png"
+      }
+    },
     "ios": {
       "bundleIdentifier": "com.willbusby.anabellesApp"
     }
